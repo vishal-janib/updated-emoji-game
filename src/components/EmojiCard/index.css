@@ -1,0 +1,16 @@
+/* Write your code here. */
+.emoji-cards {
+  list-style-type: none;
+}
+
+.emojibtn {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 200px;
+  border-radius: 15px;
+  border-style: none;
+}

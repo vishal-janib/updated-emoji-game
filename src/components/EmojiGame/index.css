@@ -1,0 +1,28 @@
+/* Write your code here.  */
+@media (min-width: 768px) {
+  .bg-emoji-container {
+    padding-top: 2%;
+    padding-right: 40px;
+  }
+  .cards-Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-emoji-container {
+    padding-right: 25px;
+    padding-top: 2%;
+  }
+  .cards-Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-self: center;
+    justify-content: center;
+  }
+}
