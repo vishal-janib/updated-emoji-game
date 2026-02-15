@@ -3,14 +3,40 @@
   list-style-type: none;
 }
 
-.emojibtn {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 15px;
-  height: 200px;
-  border-radius: 15px;
-  border-style: none;
+@media (min-width: 768px) {
+  .emojibtn {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border-style: none;
+  }
+
+  .emojiImage {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .emojibtn {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border-style: none;
+  }
+
+  .emojiImage {
+    height: 55px;
+    width: 55px;
+  }
 }

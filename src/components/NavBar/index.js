@@ -10,9 +10,9 @@ const NavBar = props => {
         <img
           src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
           alt="emoji logo"
-          style={{height: '40px', marginRight: '5px'}}
+          style={{height: '100%', marginRight: '5px'}}
         />
-        <h1 style={{fontSize: '25px'}}>Emoji Game</h1>
+        <h1 className="emojiGameHeader">Emoji Game</h1>
       </div>
       <div className="logo-Name">
         <p style={{marginRight: '10px'}}>Score: {score}</p>

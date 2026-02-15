@@ -20,6 +20,7 @@ const WinOrLoseCard = props => {
         <img
           src="https://assets.ccbp.in/frontend/react-js/lose-game-img.png"
           alt="win or lose"
+          className="winOrLoseImage"
         />
         <h1 className="heading">You Lose</h1>
         <p>Score</p>
@@ -42,6 +43,7 @@ const WinOrLoseCard = props => {
         <img
           src="https://assets.ccbp.in/frontend/react-js/won-game-img.png"
           alt="win or lose"
+          className="winOrLoseImage"
         />
         <h1 className="heading">You Won</h1>
         <p>Best Score</p>
@@ -54,9 +56,8 @@ const WinOrLoseCard = props => {
   const winLoseCard = () => {
     if (score === 12) {
       return winCard()
-    } else {
-      return loseCard()
     }
+    return loseCard()
   }
   return <div className="winLoseContainer">{winLoseCard()}</div>
 }
