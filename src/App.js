@@ -100,16 +100,14 @@ const App = () => {
         setGameStatus(gameStatusObj.win)
         setclickedEmojiList([])
       }
+    } else if (topScore <= score) {
+      setTopScore(score)
+      setGameStatus(gameStatusObj.lost)
+      setclickedEmojiList([])
     } else {
-      if (topScore <= score) {
-        setTopScore(score)
-        setGameStatus(gameStatusObj.lost)
-        setclickedEmojiList([])
-      } else {
-        setGameStatus(gameStatusObj.lost)
-        setTopScore(topScore)
-        setclickedEmojiList([])
-      }
+      setGameStatus(gameStatusObj.lost)
+      setTopScore(topScore)
+      setclickedEmojiList([])
     }
   }
 

@@ -13,7 +13,7 @@ body {
 }
 
 .bg-app-container {
-  height: 100vh;
-  width: 100vw;
   background-color: beige;
+  min-width: 100vw;
+  height: 100vh;
 }
